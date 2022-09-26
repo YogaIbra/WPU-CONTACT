@@ -1,0 +1,14 @@
+    <h1>HALO GUYSSS</h1>
+
+    <h3>Daftar siswa SMP</h3>
+    <% if (siswa.length < 1) { %>
+        <p>Data masih kosong</p>
+    <% } else {%> 
+    <% siswa.forEach(sis => { %>
+        <ul>
+            <li>Nama : <%= sis.nama %> </li>
+            <li>Kelas : <%= sis.kelas %> </li>
+            <li>No Absen : <%= sis.absen %> </li>
+        </ul>
+    <% }) %>
+    <% } %> 
